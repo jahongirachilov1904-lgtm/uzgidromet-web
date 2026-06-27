@@ -2,8 +2,9 @@ streamlit
 pandas
 numpy
 matplotlib
-pillow
+Pillow
 geopandas
 shapely
 pyproj
 fiona
+openpyxl

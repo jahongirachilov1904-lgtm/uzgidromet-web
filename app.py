@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🌦 Uzgidromet ob-havo infografika web dasturi")
+st.title("🌦 Uzgidromet ob-havo pragnozi")
 st.info("Harorat, hodisa, shamol va prognoz kunlarini qo‘lda kiritasiz. Keyin PNG infografika yaratiladi.")
 
 # ===============================
@@ -207,9 +207,9 @@ side_rows = [
 # ===============================
 # 5. INFOGRAFIKA YARATISH
 # ===============================
-st.subheader("🖼 Infografika yaratish")
+st.subheader("Xarita yaratish")
 
-if st.button("✅ Infografika yaratish", type="primary"):
+if st.button("✅ Xarita yaratish", type="primary"):
     try:
         out_path = create_infographic(
             weather=weather,
@@ -222,7 +222,7 @@ if st.button("✅ Infografika yaratish", type="primary"):
             dpi=500
         )
 
-        st.success("Infografika tayyor!")
+        st.success("Xarita tayyor!")
 
         st.image(out_path, width="stretch")
 
